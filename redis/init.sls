@@ -21,6 +21,6 @@ redis:
 
 redis-sysctl:
   cmd.wait:
-    - name: sysctl -q -p/etc/sysctl.d/redis.conf
+    - name: sysctl -q -p /etc/sysctl.d/redis.conf
     - watch:
       - file: /etc/sysctl.d/redis.conf
